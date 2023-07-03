@@ -13,7 +13,10 @@ export interface ModuleOptions {
 export default defineNuxtModule<ModuleOptions>({
   meta: {
     name: 'mixpanel-nuxt',
-    configKey: 'mixpanel'
+    configKey: 'mixpanel',
+    compatibility: {
+      nuxt: '^3'
+    }
   },
   defaults: {
     token: process.env.MIXPANEL_TOKEN || '',
