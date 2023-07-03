@@ -1,13 +1,17 @@
-import { defineNuxtPlugin, useRuntimeConfig } from '#app'
+import { defineNuxtPlugin } from '#app'
 import mixpanel from 'mixpanel-browser'
+import { createMixpanelWrapper } from './utils'
 
 export default defineNuxtPlugin((nuxtApp) => {
-  const config = useRuntimeConfig().public.mixpanel
-  mixpanel.init(config.token, config)
+  const options = nuxtApp.$config.public.mixpanel
+
+  if (process.client && !options.disable && options.token) {
+    mixpanel.init(options.token, options.config)
+  }
 
   return {
     provide: {
-      mixpanel
-    }
+      mixpanel: createMixpanelWrapper(mixpanel, options),
+    },
   }
 })
