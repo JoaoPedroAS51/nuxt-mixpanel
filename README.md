@@ -2,12 +2,12 @@
 Get your module up and running quickly.
 
 Find and replace all on all files (CMD+SHIFT+F):
-- Name: nuxt-mixpanel
-- Package name: nuxt-mixpanel
+- Name: mixpanel-nuxt
+- Package name: mixpanel-nuxt
 - Description: My new Nuxt module
 -->
 
-# nuxt-mixpanel
+# mixpanel-nuxt
 
 [![npm version][npm-version-src]][npm-version-href]
 [![npm downloads][npm-downloads-src]][npm-downloads-href]
@@ -17,7 +17,7 @@ Find and replace all on all files (CMD+SHIFT+F):
 <!-- My new Nuxt module for doing amazing things. -->
 
 - [✨ &nbsp;Release Notes](/CHANGELOG.md)
-<!-- - [🏀 Online playground](https://stackblitz.com/github/your-org/nuxt-mixpanel?file=playground%2Fapp.vue) -->
+<!-- - [🏀 Online playground](https://stackblitz.com/github/your-org/mixpanel-nuxt?file=playground%2Fapp.vue) -->
 <!-- - [📖 &nbsp;Documentation](https://example.com) -->
 
 <!-- ## Features -->
@@ -29,26 +29,26 @@ Find and replace all on all files (CMD+SHIFT+F):
 
 ## Quick Setup
 
-1. Add `nuxt-mixpanel` dependency to your project
+1. Add `mixpanel-nuxt` dependency to your project
 
 ```bash
 # Using pnpm
-pnpm add -D nuxt-mixpanel
+pnpm add -D mixpanel-nuxt
 
 # Using yarn
-yarn add --dev nuxt-mixpanel
+yarn add --dev mixpanel-nuxt
 
 # Using npm
-npm install --save-dev nuxt-mixpanel
+npm install --save-dev mixpanel-nuxt
 ```
 
-2. Add `nuxt-mixpanel` to the `modules` section of `nuxt.config.ts`
+2. Add `mixpanel-nuxt` to the `modules` section of `nuxt.config.ts`
 
 ```js
 export default defineNuxtConfig({
   modules: [
-    'nuxt-mixpanel'
-  ]
+    'mixpanel-nuxt'
+  ],
 })
 ```
 
@@ -81,14 +81,14 @@ npm run release
 ```
 
 <!-- Badges -->
-[npm-version-src]: https://img.shields.io/npm/v/nuxt-mixpanel/latest.svg?style=flat&colorA=18181B&colorB=28CF8D
-[npm-version-href]: https://npmjs.com/package/nuxt-mixpanel
+[npm-version-src]: https://img.shields.io/npm/v/mixpanel-nuxt/latest.svg?style=flat&colorA=18181B&colorB=28CF8D
+[npm-version-href]: https://npmjs.com/package/mixpanel-nuxt
 
-[npm-downloads-src]: https://img.shields.io/npm/dm/nuxt-mixpanel.svg?style=flat&colorA=18181B&colorB=28CF8D
-[npm-downloads-href]: https://npmjs.com/package/nuxt-mixpanel
+[npm-downloads-src]: https://img.shields.io/npm/dm/mixpanel-nuxt.svg?style=flat&colorA=18181B&colorB=28CF8D
+[npm-downloads-href]: https://npmjs.com/package/mixpanel-nuxt
 
-[license-src]: https://img.shields.io/npm/l/nuxt-mixpanel.svg?style=flat&colorA=18181B&colorB=28CF8D
-[license-href]: https://npmjs.com/package/nuxt-mixpanel
+[license-src]: https://img.shields.io/npm/l/mixpanel-nuxt.svg?style=flat&colorA=18181B&colorB=28CF8D
+[license-href]: https://npmjs.com/package/mixpanel-nuxt
 
 [nuxt-src]: https://img.shields.io/badge/Nuxt-18181B?logo=nuxt.js
 [nuxt-href]: https://nuxt.com

@@ -1,5 +1,5 @@
 {
-  "name": "nuxt-mixpanel",
+  "name": "mixpanel-nuxt",
   "version": "1.0.0",
   "description": "Mixpanel module for Nuxt",
   "repository": "JoaoPedroAS51/nuxt-mixpanel",

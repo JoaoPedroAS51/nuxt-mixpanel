@@ -12,7 +12,7 @@ export interface ModuleOptions {
 
 export default defineNuxtModule<ModuleOptions>({
   meta: {
-    name: 'nuxt-mixpanel',
+    name: 'mixpanel-nuxt',
     configKey: 'mixpanel'
   },
   defaults: {
