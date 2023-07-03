@@ -52,7 +52,36 @@ export default defineNuxtConfig({
 })
 ```
 
-That's it! You can now use nuxt-mixpanel in your Nuxt app ✨
+## Basic usage
+
+You can use the provided composable to access Mixpanel anywhere.
+
+```js
+const mixpanel = useMixpanel()
+mixpanel.track('My event')
+```
+
+## Configuration
+
+You just need to set your Mixpanel token in the module options and you're good to go!
+By default `process.env.MIXPANEL_TOKEN` is used. 
+
+You can also disable the module by setting `disabled: true`.
+
+```js
+export default defineNuxtConfig({
+  modules: [
+    'mixpanel-nuxt'
+  ],
+  mixpanel: {
+    token: 'your-token',
+    disabled: false,
+    config: {
+      // Mixpanel config
+    }
+  }
+})
+```
 
 ## Development
 
