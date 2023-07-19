@@ -2,22 +2,24 @@ import type { Mixpanel } from 'mixpanel-browser'
 import type { ModuleOptions } from '../module'
 
 export function createMixpanelWrapper(mixpanel: Mixpanel, options: ModuleOptions): Mixpanel {
-  const wrapper: Record<string, any> = {}
+  return new Proxy(mixpanel, {
+    get(target, propertyName: string) {
+      const originalMethod = Reflect.get(target, propertyName)
+      const isMethod = typeof originalMethod === 'function'
 
-  for (const propertyName in mixpanel) {
-    const property = mixpanel[propertyName as keyof Mixpanel] as any
-    if (typeof property === 'function') {
-      wrapper[propertyName] = (...args: any[]) => {
-        if (process.server || options.disable) {
-          return
+      if (isMethod && options.disable) {
+        return (...args: any[]) => {
+          console.info(`Mixpanel is disabled, "${propertyName}" method has not been called.`)
+          console.info(
+            `${propertyName}(${args
+              .filter(Boolean)
+              .map((arg) => JSON.stringify(arg))
+              .join(', ')})`
+          )
         }
-
-        return property(...args)
       }
-    } else {
-      wrapper[propertyName] = property
-    }
-  }
 
-  return wrapper as Mixpanel
+      return originalMethod
+    },
+  })
 }
