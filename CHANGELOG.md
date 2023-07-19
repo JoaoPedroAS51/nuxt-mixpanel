@@ -1,6 +1,19 @@
 # Changelog
 
 
+## v0.0.2
+
+[compare changes](https://undefined/undefined/compare/v0.0.1...v0.0.2)
+
+
+### 🩹 Fixes
+
+  - **runtime:** Fix mixpanel wrapper (12b3294)
+
+### ❤️  Contributors
+
+- João Pedro Antunes Silva <joao-pedroas@hotmail.com>
+
 ## v0.0.1
 
 
