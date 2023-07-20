@@ -1,6 +1,19 @@
 # Changelog
 
 
+## v0.0.3
+
+[compare changes](https://undefined/undefined/compare/v0.0.2...v0.0.3)
+
+### 🩹 Fixes
+
+- **runtime:** Disable in server side (da9121c)
+- **runtime:** Log only if debug is enabled (373e7b2)
+
+### ❤️  Contributors
+
+- João Pedro Antunes Silva <joao-pedroas@hotmail.com>
+
 ## v0.0.2
 
 [compare changes](https://undefined/undefined/compare/v0.0.1...v0.0.2)
