@@ -9,7 +9,7 @@ export function createMixpanelWrapper(mixpanel: Mixpanel, options: ModuleOptions
 
       if (isMethod && (options.disable || process.server)) {
         return (...args: any[]) => {
-          if (process.server) {
+          if (!options.config.debug || process.server) {
             return
           }
           console.info(`Mixpanel is disabled, "${propertyName}" method has not been called.`)
