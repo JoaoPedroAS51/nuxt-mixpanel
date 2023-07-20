@@ -7,8 +7,11 @@ export function createMixpanelWrapper(mixpanel: Mixpanel, options: ModuleOptions
       const originalMethod = Reflect.get(target, propertyName)
       const isMethod = typeof originalMethod === 'function'
 
-      if (isMethod && options.disable) {
+      if (isMethod && (options.disable || process.server)) {
         return (...args: any[]) => {
+          if (process.server) {
+            return
+          }
           console.info(`Mixpanel is disabled, "${propertyName}" method has not been called.`)
           console.info(
             `${propertyName}(${args
