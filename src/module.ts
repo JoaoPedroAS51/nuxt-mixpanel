@@ -5,7 +5,6 @@ const logger = useLogger('nuxt:mixpanel')
 
 // Module options TypeScript interface definition
 export interface ModuleOptions {
-  name: string
   token: string
   disable: boolean
   config: Partial<MixpanelConfig>
@@ -20,7 +19,6 @@ export default defineNuxtModule<ModuleOptions>({
     }
   },
   defaults: {
-    name: 'mixpanel-nuxt',
     token: process.env.MIXPANEL_TOKEN || '',
     disable: false,
     config: {},
@@ -38,8 +36,6 @@ export default defineNuxtModule<ModuleOptions>({
     // Create resolver to resolve relative paths
     const { resolve } = createResolver(import.meta.url)
     const runtimeDir = resolve('./runtime')
-
-    nuxt.options.build.transpile.push('mixpanel-browser')
 
     addPlugin(resolve(runtimeDir, 'plugin'))
 

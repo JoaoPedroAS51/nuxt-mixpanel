@@ -1,8 +1,8 @@
 import type { Mixpanel } from 'mixpanel-browser'
 import type { ModuleOptions } from '../module'
 
-export function createMixpanelWrapper(mixpanel: Mixpanel | undefined, options: ModuleOptions): Mixpanel {
-  return new Proxy(mixpanel ?? {} as Mixpanel, {
+export function createMixpanelWrapper(mixpanel: Mixpanel, options: ModuleOptions): Mixpanel {
+  return new Proxy(mixpanel, {
     get(target, propertyName: string) {
       const originalMethod = Reflect.get(target, propertyName)
       const isMethod = typeof originalMethod === 'function'
