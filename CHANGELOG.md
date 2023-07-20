@@ -1,6 +1,18 @@
 # Changelog
 
 
+## v0.0.4
+
+[compare changes](https://undefined/undefined/compare/v0.0.3...v0.0.4)
+
+### 🩹 Fixes
+
+- Only create mixpanel instance on init (e532309)
+
+### ❤️  Contributors
+
+- João Pedro Antunes Silva <joao-pedroas@hotmail.com>
+
 ## v0.0.3
 
 [compare changes](https://undefined/undefined/compare/v0.0.2...v0.0.3)
