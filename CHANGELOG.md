@@ -11,7 +11,7 @@
 
 ### ❤️  Contributors
 
-- João Pedro Antunes Silva <joao-pedroas@hotmail.com>
+- João Pedro Antunes Silva <hi@joaopedroas.com>
 
 ## v0.0.5
 
@@ -23,7 +23,7 @@
 
 ### ❤️  Contributors
 
-- João Pedro Antunes Silva <joao-pedroas@hotmail.com>
+- João Pedro Antunes Silva <hi@joaopedroas.com>
 
 ## v0.0.4
 
@@ -35,7 +35,7 @@
 
 ### ❤️  Contributors
 
-- João Pedro Antunes Silva <joao-pedroas@hotmail.com>
+- João Pedro Antunes Silva <hi@joaopedroas.com>
 
 ## v0.0.3
 
@@ -48,7 +48,7 @@
 
 ### ❤️  Contributors
 
-- João Pedro Antunes Silva <joao-pedroas@hotmail.com>
+- João Pedro Antunes Silva <hi@joaopedroas.com>
 
 ## v0.0.2
 
@@ -61,7 +61,7 @@
 
 ### ❤️  Contributors
 
-- João Pedro Antunes Silva <joao-pedroas@hotmail.com>
+- João Pedro Antunes Silva <hi@joaopedroas.com>
 
 ## v0.0.1
 
@@ -79,5 +79,5 @@
 
 ### ❤️  Contributors
 
-- João Pedro Antunes Silva <joao-pedroas@hotmail.com>
+- João Pedro Antunes Silva <hi@joaopedroas.com>
 
