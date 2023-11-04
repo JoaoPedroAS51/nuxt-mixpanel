@@ -1,4 +1,4 @@
-import { defineNuxtModule, addPlugin, createResolver, useLogger, addImports } from '@nuxt/kit'
+import { defineNuxtModule, addPlugin, createResolver, useLogger, addImports, extendViteConfig } from '@nuxt/kit'
 import type { Config as MixpanelConfig } from 'mixpanel-browser'
 
 const logger = useLogger('nuxt:mixpanel')
@@ -43,6 +43,17 @@ export default defineNuxtModule<ModuleOptions>({
       name: 'useMixpanel',
       as: 'useMixpanel',
       from: resolve(runtimeDir, 'composables'),
+    })
+
+    nuxt.options.build.transpile.push(runtimeDir)
+
+    extendViteConfig(config => {
+      config.optimizeDeps = config.optimizeDeps || {}
+      config.optimizeDeps.include = config.optimizeDeps.include || []
+      config.optimizeDeps.exclude = config.optimizeDeps.exclude || []
+      config.optimizeDeps.include.push(
+        'mixpanel-browser',
+      )
     })
   },
 })
