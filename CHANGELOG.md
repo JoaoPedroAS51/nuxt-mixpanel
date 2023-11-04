@@ -1,6 +1,18 @@
 # Changelog
 
 
+## v0.0.6
+
+[compare changes](https://undefined/undefined/compare/v0.0.5...v0.0.6)
+
+### 🩹 Fixes
+
+- **module:** Transpile and optimizeDeps (4c6e222)
+
+### ❤️  Contributors
+
+- João Pedro Antunes Silva <joao-pedroas@hotmail.com>
+
 ## v0.0.5
 
 [compare changes](https://undefined/undefined/compare/v0.0.4...v0.0.5)
