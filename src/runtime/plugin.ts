@@ -1,4 +1,4 @@
-import { defineNuxtPlugin } from '#app'
+import { defineNuxtPlugin } from '#imports'
 import mixpanel from 'mixpanel-browser'
 import { createMixpanelWrapper } from './utils'
 
