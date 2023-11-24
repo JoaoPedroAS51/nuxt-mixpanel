@@ -10,6 +10,12 @@ export interface ModuleOptions {
   config: Partial<MixpanelConfig>
 }
 
+declare module 'nuxt/schema' {
+  interface PublicRuntimeConfig {
+    mixpanel: ModuleOptions
+  }
+}
+
 export default defineNuxtModule<ModuleOptions>({
   meta: {
     name: 'mixpanel-nuxt',
