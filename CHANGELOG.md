@@ -1,6 +1,24 @@
 # Changelog
 
 
+## v0.0.7
+
+[compare changes](https://github.com/JoaoPedroAS51/nuxt-mixpanel/compare/v0.0.6...v0.0.7)
+
+### 🩹 Fixes
+
+- Import from #imports ([79bfed3](https://github.com/JoaoPedroAS51/nuxt-mixpanel/commit/79bfed3))
+- Auto track pageview using route middleware ([91bf3f9](https://github.com/JoaoPedroAS51/nuxt-mixpanel/commit/91bf3f9))
+- RuntimeConfig type ([b6014d6](https://github.com/JoaoPedroAS51/nuxt-mixpanel/commit/b6014d6))
+
+### 🏡 Chore
+
+- Update commit email ([4cb0927](https://github.com/JoaoPedroAS51/nuxt-mixpanel/commit/4cb0927))
+
+### ❤️ Contributors
+
+- João Pedro Antunes Silva ([@JoaoPedroAS51](http://github.com/JoaoPedroAS51))
+
 ## v0.0.6
 
 [compare changes](https://undefined/undefined/compare/v0.0.5...v0.0.6)
