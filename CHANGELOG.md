@@ -1,6 +1,23 @@
 # Changelog
 
 
+## v0.0.8
+
+[compare changes](https://github.com/JoaoPedroAS51/nuxt-mixpanel/compare/v0.0.7...v0.0.8)
+
+### 🩹 Fixes
+
+- Use `import.meta` for client and server ([e3fa5d3](https://github.com/JoaoPedroAS51/nuxt-mixpanel/commit/e3fa5d3))
+
+### 🏡 Chore
+
+- Update deps and dev deps ([012bedb](https://github.com/JoaoPedroAS51/nuxt-mixpanel/commit/012bedb))
+- Update scripts ([1cc2d4f](https://github.com/JoaoPedroAS51/nuxt-mixpanel/commit/1cc2d4f))
+
+### ❤️ Contributors
+
+- JoaoPedroAS51 ([@JoaoPedroAS51](http://github.com/JoaoPedroAS51))
+
 ## v0.0.7
 
 [compare changes](https://github.com/JoaoPedroAS51/nuxt-mixpanel/compare/v0.0.6...v0.0.7)
