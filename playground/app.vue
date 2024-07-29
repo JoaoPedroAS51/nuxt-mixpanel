@@ -8,6 +8,5 @@
 import { useMixpanel } from '#imports'
 
 const mixpanel = useMixpanel()
-console.log(mixpanel)
-console.log(mixpanel.track('test'))
+mixpanel.track('test')
 </script>
