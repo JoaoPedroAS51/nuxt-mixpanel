@@ -1,6 +1,18 @@
 # Changelog
 
 
+## v0.0.9
+
+[compare changes](https://github.com/JoaoPedroAS51/nuxt-mixpanel/compare/v0.0.8...v0.0.9)
+
+### 🏡 Chore
+
+- Save @types/mixpanel-browser as dependency ([5b3c35b](https://github.com/JoaoPedroAS51/nuxt-mixpanel/commit/5b3c35b))
+
+### ❤️ Contributors
+
+- JoaoPedroAS51 ([@JoaoPedroAS51](http://github.com/JoaoPedroAS51))
+
 ## v0.0.8
 
 [compare changes](https://github.com/JoaoPedroAS51/nuxt-mixpanel/compare/v0.0.7...v0.0.8)
