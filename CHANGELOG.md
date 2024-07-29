@@ -1,6 +1,18 @@
 # Changelog
 
 
+## v0.0.12
+
+[compare changes](https://github.com/JoaoPedroAS51/nuxt-mixpanel/compare/v0.0.11...v0.0.12)
+
+### 🩹 Fixes
+
+- OptimizeDeps ([2a5a523](https://github.com/JoaoPedroAS51/nuxt-mixpanel/commit/2a5a523))
+
+### ❤️ Contributors
+
+- JoaoPedroAS51 ([@JoaoPedroAS51](http://github.com/JoaoPedroAS51))
+
 ## v0.0.11
 
 [compare changes](https://github.com/JoaoPedroAS51/nuxt-mixpanel/compare/v0.0.10...v0.0.11)
