@@ -1,6 +1,18 @@
 # Changelog
 
 
+## v0.0.11
+
+[compare changes](https://github.com/JoaoPedroAS51/nuxt-mixpanel/compare/v0.0.10...v0.0.11)
+
+### 🩹 Fixes
+
+- Don’t add to optimizeDeps ([c10ec65](https://github.com/JoaoPedroAS51/nuxt-mixpanel/commit/c10ec65))
+
+### ❤️ Contributors
+
+- JoaoPedroAS51 ([@JoaoPedroAS51](http://github.com/JoaoPedroAS51))
+
 ## v0.0.10
 
 [compare changes](https://github.com/JoaoPedroAS51/nuxt-mixpanel/compare/v0.0.9...v0.0.10)
