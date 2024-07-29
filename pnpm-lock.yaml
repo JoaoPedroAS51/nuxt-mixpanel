@@ -11,6 +11,9 @@ importers:
       '@nuxt/kit':
         specifier: ^3.12.4
         version: 3.12.4(magicast@0.3.4)(rollup@4.19.1)
+      '@types/mixpanel-browser':
+        specifier: ^2.49.1
+        version: 2.49.1
       mixpanel-browser:
         specifier: ^2.54.0
         version: 2.54.0
@@ -27,9 +30,6 @@ importers:
       '@nuxt/test-utils':
         specifier: ^3.14.0
         version: 3.14.0(h3@1.12.0)(magicast@0.3.4)(nitropack@2.9.7(magicast@0.3.4))(rollup@4.19.1)(vite@5.3.5(@types/node@20.14.13)(terser@5.31.3))(vitest@2.0.4(@types/node@20.14.13)(terser@5.31.3))(vue-router@4.4.0(vue@3.4.34(typescript@5.5.4)))(vue@3.4.34(typescript@5.5.4))
-      '@types/mixpanel-browser':
-        specifier: ^2.49.1
-        version: 2.49.1
       '@types/node':
         specifier: ^20.14.13
         version: 20.14.13
