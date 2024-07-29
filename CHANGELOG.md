@@ -1,6 +1,18 @@
 # Changelog
 
 
+## v0.0.10
+
+[compare changes](https://github.com/JoaoPedroAS51/nuxt-mixpanel/compare/v0.0.9...v0.0.10)
+
+### 🩹 Fixes
+
+- Mixpanel type ([942e0c8](https://github.com/JoaoPedroAS51/nuxt-mixpanel/commit/942e0c8))
+
+### ❤️ Contributors
+
+- JoaoPedroAS51 ([@JoaoPedroAS51](http://github.com/JoaoPedroAS51))
+
 ## v0.0.9
 
 [compare changes](https://github.com/JoaoPedroAS51/nuxt-mixpanel/compare/v0.0.8...v0.0.9)
