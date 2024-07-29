@@ -1,5 +1,5 @@
 import { defineNuxtPlugin, addRouteMiddleware } from '#imports'
-import mixpanel from 'mixpanel-browser'
+import mixpanel, { type Mixpanel } from 'mixpanel-browser'
 import mixpanelMiddleware from './middleware'
 import { createMixpanelWrapper } from './utils'
 
@@ -25,3 +25,15 @@ export default defineNuxtPlugin((nuxtApp) => {
     },
   }
 })
+
+declare module '#app' {
+  interface NuxtApp {
+    $mixpanel: Mixpanel
+  }
+}
+
+declare module 'vue' {
+  interface ComponentCustomProperties {
+    $mixpanel: Mixpanel
+  }
+}
