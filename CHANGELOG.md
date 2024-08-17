@@ -1,6 +1,18 @@
 # Changelog
 
 
+## v0.0.13
+
+[compare changes](https://github.com/JoaoPedroAS51/nuxt-mixpanel/compare/v0.0.12...v0.0.13)
+
+### 🩹 Fixes
+
+- Remove custom track pageview behavior ([de2f659](https://github.com/JoaoPedroAS51/nuxt-mixpanel/commit/de2f659))
+
+### ❤️ Contributors
+
+- JoaoPedroAS51 ([@JoaoPedroAS51](http://github.com/JoaoPedroAS51))
+
 ## v0.0.12
 
 [compare changes](https://github.com/JoaoPedroAS51/nuxt-mixpanel/compare/v0.0.11...v0.0.12)
