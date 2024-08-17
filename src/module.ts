@@ -1,19 +1,17 @@
 import { defineNuxtModule, addPlugin, createResolver, useLogger, addImports, extendViteConfig } from '@nuxt/kit'
-import type { Config as MixpanelConfig } from 'mixpanel-browser'
+import type { Config as _MixpanelConfig } from 'mixpanel-browser'
 
 const logger = useLogger('nuxt:mixpanel')
+
+export interface MixpanelConfig extends _MixpanelConfig {
+  track_pageview: Exclude<_MixpanelConfig['track_pageview'], true>
+}
 
 // Module options TypeScript interface definition
 export interface ModuleOptions {
   token: string
   disable: boolean
   config: Partial<MixpanelConfig>
-}
-
-declare module 'nuxt/schema' {
-  interface PublicRuntimeConfig {
-    mixpanel: ModuleOptions
-  }
 }
 
 export default defineNuxtModule<ModuleOptions>({
@@ -63,3 +61,9 @@ export default defineNuxtModule<ModuleOptions>({
     })
   },
 })
+
+declare module 'nuxt/schema' {
+  interface PublicRuntimeConfig {
+    mixpanel: ModuleOptions
+  }
+}
