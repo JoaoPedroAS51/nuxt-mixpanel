@@ -35,8 +35,7 @@
   },
   "dependencies": {
     "@nuxt/kit": "^3.12.4",
-    "@types/mixpanel-browser": "^2.49.1",
-    "mixpanel-browser": "^2.65.0"
+    "mixpanel-browser": "^2.72.0"
   },
   "devDependencies": {
     "@nuxt/eslint-config": "^0.4.0",
