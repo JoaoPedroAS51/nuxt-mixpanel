@@ -7,13 +7,18 @@
   "type": "module",
   "exports": {
     ".": {
-      "types": "./dist/types.d.ts",
-      "import": "./dist/module.mjs",
-      "require": "./dist/module.cjs"
+      "types": "./dist/types.d.mts",
+      "import": "./dist/module.mjs"
     }
   },
-  "main": "./dist/module.cjs",
-  "types": "./dist/types.d.ts",
+  "main": "./dist/module.mjs",
+  "typesVersions": {
+    "*": {
+      ".": [
+        "./dist/types.d.mts"
+      ]
+    }
+  },
   "files": [
     "dist"
   ],
@@ -34,18 +39,18 @@
     "test:watch": "vitest watch"
   },
   "dependencies": {
-    "@nuxt/kit": "^3.12.4",
+    "@nuxt/kit": "^4.2.1",
     "mixpanel-browser": "^2.72.0"
   },
   "devDependencies": {
-    "@nuxt/eslint-config": "^0.4.0",
-    "@nuxt/module-builder": "^0.8.1",
-    "@nuxt/schema": "^3.12.4",
-    "@nuxt/test-utils": "^3.14.0",
-    "@types/node": "^20.14.13",
-    "changelogen": "^0.5.5",
-    "eslint": "^8.57.0",
-    "nuxt": "^3.12.4",
-    "vitest": "^2.0.4"
+    "@nuxt/eslint-config": "^1.10.0",
+    "@nuxt/module-builder": "^1.0.2",
+    "@nuxt/schema": "^4.2.1",
+    "@nuxt/test-utils": "^3.20.1",
+    "@types/node": "^24.10.1",
+    "changelogen": "^0.6.2",
+    "eslint": "^9.39.1",
+    "nuxt": "^4.2.1",
+    "vitest": "^4.0.9"
   }
 }
