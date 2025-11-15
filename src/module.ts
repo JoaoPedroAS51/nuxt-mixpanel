@@ -19,7 +19,7 @@ export default defineNuxtModule<ModuleOptions>({
     name: 'mixpanel-nuxt',
     configKey: 'mixpanel',
     compatibility: {
-      nuxt: '^3'
+      nuxt: '>=3.0.0'
     }
   },
   defaults: {
