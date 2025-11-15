@@ -1,6 +1,6 @@
 {
   "name": "mixpanel-nuxt",
-  "version": "0.0.14",
+  "version": "0.0.15",
   "description": "Mixpanel module for Nuxt",
   "repository": "JoaoPedroAS51/nuxt-mixpanel",
   "license": "MIT",
