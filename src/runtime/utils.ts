@@ -8,6 +8,7 @@ export function createMixpanelWrapper(mixpanel: Mixpanel, options: ModuleOptions
       const isMethod = typeof originalMethod === 'function'
 
       if (isMethod && (options.disable || import.meta.server)) {
+        // eslint-disable-next-line @typescript-eslint/no-explicit-any
         return (...args: any[]) => {
           if (!options.config.debug || import.meta.server) {
             return
@@ -16,8 +17,8 @@ export function createMixpanelWrapper(mixpanel: Mixpanel, options: ModuleOptions
           console.info(
             `${propertyName}(${args
               .filter(Boolean)
-              .map((arg) => JSON.stringify(arg))
-              .join(', ')})`
+              .map(arg => JSON.stringify(arg))
+              .join(', ')})`,
           )
         }
       }

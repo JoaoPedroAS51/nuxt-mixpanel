@@ -4,6 +4,6 @@ export default defineNuxtConfig({
   mixpanel: {
     token: 'MY_TOKEN',
     disable: true,
-    config: { debug: true }
-  }
+    config: { debug: true },
+  },
 })

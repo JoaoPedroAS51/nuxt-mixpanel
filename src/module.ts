@@ -19,8 +19,8 @@ export default defineNuxtModule<ModuleOptions>({
     name: 'mixpanel-nuxt',
     configKey: 'mixpanel',
     compatibility: {
-      nuxt: '>=3.0.0'
-    }
+      nuxt: '>=3.0.0',
+    },
   },
   defaults: {
     token: process.env.MIXPANEL_TOKEN || '',
@@ -30,7 +30,8 @@ export default defineNuxtModule<ModuleOptions>({
   async setup(options, nuxt) {
     if (options.disable) {
       logger.info('Mixpanel is disabled ("disable" option has been set)')
-    } else if (!options.token) {
+    }
+    else if (!options.token) {
       options.disable = true
       logger.info('Mixpanel is disabled (no Token has been provided)')
     }
@@ -51,7 +52,7 @@ export default defineNuxtModule<ModuleOptions>({
 
     nuxt.options.build.transpile.push(runtimeDir)
 
-    extendViteConfig(config => {
+    extendViteConfig((config) => {
       config.optimizeDeps = config.optimizeDeps || {}
       config.optimizeDeps.include = config.optimizeDeps.include || []
       config.optimizeDeps.exclude = config.optimizeDeps.exclude || []
