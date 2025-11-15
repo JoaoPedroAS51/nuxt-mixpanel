@@ -1,6 +1,25 @@
 # Changelog
 
 
+## v0.0.14
+
+[compare changes](https://github.com/JoaoPedroAS51/nuxt-mixpanel/compare/v0.0.13...v0.0.14)
+
+### 🩹 Fixes
+
+- Lint ([80cf0e8](https://github.com/JoaoPedroAS51/nuxt-mixpanel/commit/80cf0e8))
+
+### 🏡 Chore
+
+- Update mixpanel-browser to 2.65.0 ([#2](https://github.com/JoaoPedroAS51/nuxt-mixpanel/pull/2))
+- Update to nuxt 4 ([044db14](https://github.com/JoaoPedroAS51/nuxt-mixpanel/commit/044db14))
+- Nuxt 4 compatibility ([cac3af6](https://github.com/JoaoPedroAS51/nuxt-mixpanel/commit/cac3af6))
+
+### ❤️ Contributors
+
+- JoaoPedroAS51 ([@JoaoPedroAS51](https://github.com/JoaoPedroAS51))
+- Senicar <senicar@gmail.com>
+
 ## v0.0.13
 
 [compare changes](https://github.com/JoaoPedroAS51/nuxt-mixpanel/compare/v0.0.12...v0.0.13)
