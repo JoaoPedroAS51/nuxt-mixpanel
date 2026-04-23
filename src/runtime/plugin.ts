@@ -2,18 +2,21 @@ import { defineNuxtPlugin } from '#imports'
 import mixpanel, { type Mixpanel } from 'mixpanel-browser'
 import { createMixpanelWrapper } from './utils'
 
-export default defineNuxtPlugin((nuxtApp) => {
-  const options = nuxtApp.$config.public.mixpanel
+export default defineNuxtPlugin({
+  name: 'mixpanel',
+  setup: (nuxtApp) => {
+    const options = nuxtApp.$config.public.mixpanel
 
-  if (import.meta.client && !options.disable && options.token) {
-    mixpanel.init(options.token, options.config)
-  }
+    if (import.meta.client && !options.disable && options.token) {
+      mixpanel.init(options.token, options.config)
+    }
 
-  return {
-    provide: {
-      mixpanel: createMixpanelWrapper(mixpanel, options),
-    },
-  }
+    return {
+      provide: {
+        mixpanel: createMixpanelWrapper(mixpanel, options),
+      },
+    }
+  },
 })
 
 declare module '#app' {
