@@ -1,6 +1,18 @@
 # Changelog
 
 
+## v0.0.16
+
+[compare changes](https://github.com/JoaoPedroAS51/nuxt-mixpanel/compare/v0.0.15...v0.0.16)
+
+### 🩹 Fixes
+
+- **plugin:** Set plugin name to `mixpanel` ([abea822](https://github.com/JoaoPedroAS51/nuxt-mixpanel/commit/abea822))
+
+### ❤️ Contributors
+
+- JoaoPedroAS51 ([@JoaoPedroAS51](https://github.com/JoaoPedroAS51))
+
 ## v0.0.15
 
 [compare changes](https://github.com/JoaoPedroAS51/nuxt-mixpanel/compare/v0.0.14...v0.0.15)
